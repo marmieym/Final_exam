@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GoodReads</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" type="image/png" href="/photos/favicon.png"/>
+</head>
+<body>
+
+  <section class="hero">
+
+    <nav>
+<a href="#" class="logo">GoodReads<span style="color: #AD5D4E;">.</span></a>      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Find your next</h1>
+      <h1 class="italic">obsession.</h1>
+      <p>Track what you read. Discover books through movies, shows, and games you already love.</p>
+      <a href="#" class="btn">Search for books »</a>
+    </div>
+
+    <div class="scroll-hint">↓ &nbsp; scroll to explore</div>
+
+  </section>
+
+
+  <section class="popular-section">
+
+    <div class="section-header">
+      <h2 class="section-title">Popular Right Now</h2>
+      <a href="#" class="section-link">View all →</a>
+    </div>
+
+    <p class="section-subtitle">What readers can't put down this week</p>
+
+    <div class="books-track">
+
+      <div class="book-card">
+        <div class="book-rank">#1</div>
+        <div class="book-scene">
+          <div class="book">
+            <div class="book-spine"></div>
+            <div class="book-front">
+              <img class="book-cover-img" src="/photos/six_of_crows.jpeg" alt="Six of Crows cover"/>
+            </div>
+            <div class="book-back"></div>
+            <div class="book-pages"></div>
+          </div>
+        </div>
+        <div class="book-title">Six of Crows</div>
+        <div class="book-author">Leigh Bardugo</div>
+        <div class="stars">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star half"></div>
+          <span class="rating-num">4.5</span>
+        </div>
+        <button class="btn-add" onclick="toggleAdd(this)">+ Want to Read</button>
+      </div>
+
+      <!-- BOOK 2 -->
+      <div class="book-card">
+        <div class="book-rank">#2</div>
+        <div class="book-scene">
+          <div class="book">
+            <div class="book-spine"></div>
+            <div class="book-front">
+              <img class="book-cover-img" src="/photos/hench.jpg" alt="Hench cover"/>
+            </div>
+            <div class="book-back"></div>
+            <div class="book-pages"></div>
+          </div>
+        </div>
+        <div class="book-title">Hench</div>
+        <div class="book-author">Natalie Zina Walschots</div>
+        <div class="stars">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star half"></div>
+          <span class="rating-num">4.3</span>
+        </div>
+        <button class="btn-add" onclick="toggleAdd(this)">+ Want to Read</button>
+      </div>
+
+      <!-- BOOK 3 -->
+      <div class="book-card">
+        <div class="book-rank">#3</div>
+        <div class="book-scene">
+          <div class="book">
+            <div class="book-spine"></div>
+            <div class="book-front">
+              <img class="book-cover-img" src="/photos/blood_of_elves.jpg" alt="Blood of Elves cover"/>
+            </div>
+            <div class="book-back"></div>
+            <div class="book-pages"></div>
+          </div>
+        </div>
+        <div class="book-title">Blood of Elves</div>
+        <div class="book-author">Andrzej Sapkowski</div>
+        <div class="stars">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star half"></div>
+          <span class="rating-num">4.2</span>
+        </div>
+        <button class="btn-add" onclick="toggleAdd(this)">+ Want to Read</button>
+      </div>
+
+      <!-- BOOK 4 -->
+      <div class="book-card">
+        <div class="book-rank">#4</div>
+        <div class="book-scene">
+          <div class="book">
+            <div class="book-spine"></div>
+            <div class="book-front">
+              <img class="book-cover-img" src="/photos/summer_camp_for_slasher_victims.jpg" alt="Summer Camp for Slasher Victims cover"/>
+            </div>
+            <div class="book-back"></div>
+            <div class="book-pages"></div>
+          </div>
+        </div>
+        <div class="book-title">Summer Camp for Slasher Victims</div>
+        <div class="book-author">Matthew Mercer</div>
+        <div class="stars">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star half"></div>
+          <span class="rating-num">4.2</span>
+        </div>
+        <button class="btn-add" onclick="toggleAdd(this)">+ Want to Read</button>
+      </div>
+
+      <!-- BOOK 5 -->
+      <div class="book-card">
+        <div class="book-rank">#5</div>
+        <div class="book-scene">
+          <div class="book">
+            <div class="book-spine"></div>
+            <div class="book-front">
+              <img class="book-cover-img" src="/photos/carrie.jpg" alt="Carrie cover"/>
+            </div>
+            <div class="book-back"></div>
+            <div class="book-pages"></div>
+          </div>
+        </div>
+        <div class="book-title">Carrie</div>
+        <div class="book-author">Stephen King</div>
+        <div class="stars">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star half"></div>
+          <span class="rating-num">4.4</span>
+        </div>
+        <button class="btn-add" onclick="toggleAdd(this)">+ Want to Read</button>
+      </div>
+
+      <!-- BOOK 6 -->
+      <div class="book-card">
+        <div class="book-rank">#6</div>
+        <div class="book-scene">
+          <div class="book">
+            <div class="book-spine"></div>
+            <div class="book-front">
+              <img class="book-cover-img" src="/photos/the_shuddering.jpg" alt="The Shuddering cover"/>
+            </div>
+            <div class="book-back"></div>
+            <div class="book-pages"></div>
+          </div>
+        </div>
+        <div class="book-title">The Shuddering</div>
+        <div class="book-author">Ania Ahlborn</div>
+        <div class="stars">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star empty"></div>
+          <span class="rating-num">4.0</span>
+        </div>
+        <button class="btn-add" onclick="toggleAdd(this)">+ Want to Read</button>
+      </div>
+
+      <!-- BOOK 7 -->
+      <div class="book-card">
+        <div class="book-rank">#7</div>
+        <div class="book-scene">
+          <div class="book">
+            <div class="book-spine"></div>
+            <div class="book-front">
+              <img class="book-cover-img" src="/photos/death_on_the_nile.webp" alt="Death on the Nile cover"/>
+            </div>
+            <div class="book-back"></div>
+            <div class="book-pages"></div>
+          </div>
+        </div>
+        <div class="book-title">Death on the Nile</div>
+        <div class="book-author">Agatha Christie</div>
+        <div class="stars">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star empty"></div>
+          <span class="rating-num">3.9</span>
+        </div>
+        <button class="btn-add" onclick="toggleAdd(this)">+ Want to Read</button>
+      </div>
+
+      <!-- BOOK 8 -->
+      <div class="book-card">
+        <div class="book-rank">#8</div>
+        <div class="book-scene">
+          <div class="book">
+            <div class="book-spine"></div>
+            <div class="book-front">
+              <img class="book-cover-img" src="/photos/life_for_sale.jpg" alt="Life for Sale cover"/>
+            </div>
+            <div class="book-back"></div>
+            <div class="book-pages"></div>
+          </div>
+        </div>
+        <div class="book-title">Life for Sale</div>
+        <div class="book-author">Yukio Mishima</div>
+        <div class="stars">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star empty"></div>
+          <span class="rating-num">4.0</span>
+        </div>
+        <button class="btn-add" onclick="toggleAdd(this)">+ Want to Read</button>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <script>
+    function toggleAdd(btn) {
+      const isAdded = btn.classList.contains('added');
+      btn.classList.toggle('added');
+      btn.textContent = isAdded ? '+ Want to Read' : '✓ Added';
+    }
+  </script>
+
+
+  <section class="features">
+
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        </svg>
+      </div>
+      <h3>Track Reading</h3>
+      <p>Log every book, track your progress, and watch your reading stats grow over time.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.35-4.35"/>
+          <path d="M11 8v6M8 11h6"/>
+        </svg>
+      </div>
+      <h3>Discover by Vibe</h3>
+      <p>Enter a movie, show, or game — get books with the same emotional DNA and atmosphere.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="7" rx="1"/>
+          <rect x="14" y="3" width="7" height="7" rx="1"/>
+          <rect x="3" y="14" width="7" height="7" rx="1"/>
+          <rect x="14" y="14" width="7" height="7" rx="1"/>
+        </svg>
+      </div>
+      <h3>Build Your Shelf</h3>
+      <p>Curate shelves that feel like your reading identity, not just another to-do list.</p>
+    </div>
+
+  </section>
+
+
+  <!-- ═══════════════ FIND YOUR AUTHOR ═══════════════ -->
+  <section class="authors-section">
+
+    <div class="authors-header">
+      <div>
+        <h2 class="authors-title">Find Your Author</h2>
+        <p class="authors-sub">Voices worth following, worlds worth getting lost in</p>
+      </div>
+      <a href="#" class="view-all-link">View all authors →</a>
+    </div>
+
+    <div class="authors-track">
+
+      <div class="author-card">
+        <div class="author-photo">
+          <img src="/photos/stephen_king.jpeg" alt="Stephen King" onerror="this.style.display='none'"/>
+          <span class="author-initial">S</span>
+        </div>
+        <div class="author-name">Stephen King</div>
+        <div class="author-genre">Horror · Thriller</div>
+        <div class="author-books">67 books</div>
+      </div>
+
+      <div class="author-card">
+        <div class="author-photo">
+          <img src="/photos/leigh_bardugo.jpeg" alt="Leigh Bardugo" onerror="this.style.display='none'"/>
+          <span class="author-initial">L</span>
+        </div>
+        <div class="author-name">Leigh Bardugo</div>
+        <div class="author-genre">Fantasy</div>
+        <div class="author-books">12 books</div>
+      </div>
+
+      <div class="author-card">
+        <div class="author-photo">
+          <img src="/photos/agatha_christie.jpg" alt="Agatha Christie" onerror="this.style.display='none'"/>
+          <span class="author-initial">A</span>
+        </div>
+        <div class="author-name">Agatha Christie</div>
+        <div class="author-genre">Mystery · Crime</div>
+        <div class="author-books">85 books</div>
+      </div>
+
+      <div class="author-card">
+        <div class="author-photo">
+          <img src="/photos/andrzej_sapkowski.jpeg" alt="Andrzej Sapkowski" onerror="this.style.display='none'"/>
+          <span class="author-initial">A</span>
+        </div>
+        <div class="author-name">Andrzej Sapkowski</div>
+        <div class="author-genre">Fantasy</div>
+        <div class="author-books">15 books</div>
+      </div>
+
+      <div class="author-card">
+        <div class="author-photo">
+          <img src="/photos/yukio_mishima.jpeg" alt="Yukio Mishima" onerror="this.style.display='none'"/>
+          <span class="author-initial">Y</span>
+        </div>
+        <div class="author-name">Yukio Mishima</div>
+        <div class="author-genre">Literary Fiction</div>
+        <div class="author-books">34 books</div>
+      </div>
+
+      <div class="author-card">
+        <div class="author-photo">
+          <img src="/photos/ania_ahlborn.jpg" alt="Ania Ahlborn" onerror="this.style.display='none'"/>
+          <span class="author-initial">A</span>
+        </div>
+        <div class="author-name">Ania Ahlborn</div>
+        <div class="author-genre">Horror</div>
+        <div class="author-books">9 books</div>
+      </div>
+
+      <div class="author-card">
+        <div class="author-photo">
+          <img src="/photos/j.r.r.tolkien.webp" alt="J.R.R. Tolkien" onerror="this.style.display='none'"/>
+          <span class="author-initial">J</span>
+        </div>
+        <div class="author-name">J.R.R. Tolkien</div>
+        <div class="author-genre">Fantasy</div>
+        <div class="author-books">12 books</div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="reviews-section">
+
+    <div class="reviews-header">
+      <div>
+        <h2 class="reviews-title">From the Community</h2>
+        <p class="reviews-sub">Real readers, honest thoughts</p>
+      </div>
+      <a href="#" class="view-all-link">Read all reviews →</a>
+    </div>
+
+    <div class="reviews-grid">
+
+      <div class="review-card review-card--large">
+        <div class="review-book-tag">
+          <img src="/photos/six_of_crows.jpeg" alt="" class="review-cover"/>
+          <div>
+            <div class="review-book-title">Six of Crows</div>
+            <div class="review-book-author">Leigh Bardugo</div>
+          </div>
+        </div>
+        <div class="review-stars">
+          <div class="star"></div><div class="star"></div><div class="star"></div>
+          <div class="star"></div><div class="star half"></div>
+        </div>
+        <blockquote class="review-quote">
+          "I just finished Six of Crows, and I can honestly say it lived up to the hype.
+          What I loved most about this book was the characters. At first, it was a little difficult keeping track of six different points of view, but after a few chapters I became completely invested in every single one of them. Kaz, Inej, Nina, Matthias, Jesper, and Wylan all felt like real people with complicated pasts, strengths, and flaws. Instead of reading for the plot alone, I found myself reading because I genuinely cared about what happened to each character.
+          Kaz Brekker was probably the most fascinating character for me. He's ruthless, intelligent, and always seems ten steps ahead of everyone else, but the book slowly reveals the pain and vulnerability hidden beneath his cold exterior. Inej was another standout. Her strength, resilience, and quiet determination made her incredibly easy to root for.
+          The plot was exciting from beginning to end. The heist itself was creative and full of unexpected twists, and I never felt completely sure that the characters would succeed. Every time I thought I knew what was going to happen, the story surprised me. The pacing was especially strong in the second half, where I found it almost impossible to put the book down.
+          One thing I appreciated was how morally gray the characters were. None of them are traditional heroes, yet they're still deeply sympathetic. The book explores themes of trust, loyalty, revenge, trauma, and survival in a way that feels mature and meaningful without becoming overly heavy.
+          The world-building was also impressive. Although Six of Crows takes place in the Grishaverse, I never felt lost despite not knowing every detail about the world beforehand. Ketterdam felt alive, dangerous, and realistic, almost like another character in the story.
+          If I had one criticism, it would be that the beginning was slightly confusing. The book throws readers into the world without much explanation, and it took me some time to understand the politics, locations, and magic system. However, once everything clicked, the story became much more enjoyable.
+          Overall, Six of Crows is one of the best fantasy books I've read in a long time. It combines unforgettable characters, clever plotting, emotional depth, and high-stakes action into a story that keeps you engaged from start to finish. The ending left me desperate to pick up the sequel immediately, which is probably the highest compliment I can give a book."
+        </blockquote>
+        <div class="review-footer">
+          <div class="reviewer-avatar">M</div>
+          <div>
+            <div class="reviewer-name">mara.reads</div>
+            <div class="review-date">May 14, 2025</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-book-tag">
+          <img src="/photos/carrie.jpg" alt="" class="review-cover"/>
+          <div>
+            <div class="review-book-title">Carrie</div>
+            <div class="review-book-author">Stephen King</div>
+          </div>
+        </div>
+        <div class="review-stars">
+          <div class="star"></div><div class="star"></div><div class="star"></div>
+          <div class="star"></div><div class="star half"></div>
+        </div>
+        <blockquote class="review-quote">
+          "Short, brutal, and devastating. King makes you feel sympathy and dread at the same time — that's hard to pull off."
+        </blockquote>
+        <div class="review-footer">
+          <div class="reviewer-avatar">J</div>
+          <div>
+            <div class="reviewer-name">j.bookworm</div>
+            <div class="review-date">Apr 2, 2025</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-book-tag">
+          <img src="/photos/death_on_the_nile.webp" alt="" class="review-cover"/>
+          <div>
+            <div class="review-book-title">Death on the Nile</div>
+            <div class="review-book-author">Agatha Christie</div>
+          </div>
+        </div>
+        <div class="review-stars">
+          <div class="star"></div><div class="star"></div><div class="star"></div>
+          <div class="star"></div><div class="star empty"></div>
+        </div>
+        <blockquote class="review-quote">
+          "Christie is simply unmatched. The atmosphere is lush and the twist genuinely surprised me even on a second read. A masterclass in misdirection."
+        </blockquote>
+        <div class="review-footer">
+          <div class="reviewer-avatar">S</div>
+          <div>
+            <div class="reviewer-name">sol_pages</div>
+            <div class="review-date">Mar 19, 2025</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-book-tag">
+          <img src="/photos/blood_of_elves.jpg" alt="" class="review-cover"/>
+          <div>
+            <div class="review-book-title">Blood of Elves</div>
+            <div class="review-book-author">Andrzej Sapkowski</div>
+          </div>
+        </div>
+        <div class="review-stars">
+          <div class="star"></div><div class="star"></div><div class="star"></div>
+          <div class="star"></div><div class="star half"></div>
+        </div>
+        <blockquote class="review-quote">
+          "If you loved the games, the books hit different. Darker, grittier, and Geralt's inner monologue is just perfect. Ciri's arc starts here and it's wonderful."
+        </blockquote>
+        <div class="review-footer">
+          <div class="reviewer-avatar">K</div>
+          <div>
+            <div class="reviewer-name">kira.fantasy</div>
+            <div class="review-date">Feb 28, 2025</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+  <section class="cta">
+    <h2>Ready to start reading?</h2>
+    <a href="account.html" class="btn">Enter the App</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <div class="footer-logo">GoodReads<span>.</span></div>
+        <p>A better way to track, discover, and fall in love with books.</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="#">Home</a>
+          <a href="#">Search</a>
+          <a href="#">Discover</a>
+          <a href="#">Popular</a>
+        </div>
+        <div class="footer-col">
+          <h4>Account</h4>
+          <a href="#">Profile</a>
+          <a href="#">My Shelves</a>
+          <a href="#">Reading Goals</a>
+          <a href="#">Settings</a>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <a href="#">About GoodReads</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 GoodReads. All rights reserved.</p>
+      <p>Made with love for readers everywhere.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
